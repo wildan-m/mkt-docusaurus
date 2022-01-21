@@ -2,34 +2,33 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# One Page Component Sample
 
-## Getting Started
+import TOCInline from '@theme/TOCInline';
 
-Get started by **creating a new site**.
+Only heading 2 or above will be in the inline TOC
+<TOCInline toc={toc} minHeadingLevel={2} maxHeadingLevel = {6} />
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-## Generate a new site
+## Simple Table Sample
 
-Generate a new Docusaurus site using the **classic template**:
+| Date | Version Number | Document Changes |
+|---|---|---|
+| 01/07/2019 | 0.01 | Initial Draft |
+| 29/08/2019 | 0.02 | Added more detail for users |
+| 09/12/2020 | 1.2 | Complete rewrite following CEN collaboration and design changes. |
 
-```shell
-npm init docusaurus@latest my-website classic
+## Image, Text, Bullet, Merged Cell Sample
+
+| <!-- --> | <!-- --> |
+|---|---|
+|![sensor-node-sn-sf-001](/img/sensor-node-sn-sf-001.jpg) | 1.2	Key Features <br/>- Small & Discrete: blends into your home. <br/>- Secure. <br/> - Affordable. <br/> - Highly accurate. <br/> - Easy to set up. <br/>- Wi-Fi / Sigfox LPWAN - best-in-class RF performance. <br/>- Android / iOS app. <br/>- Web portal. <br/>- Fully integrated analytics reporting. <br/>- Made in New Zealand. |
+
+
+
+```mdx-code-block
+import ProductKeyFeatures from '/src/components/ProductKeyFeatures';
+
+<ProductKeyFeatures />
 ```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and displays your changes.
