@@ -53,3 +53,8 @@ It is possible to edit versioned docs in their respective folder:
 
 - `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
 - `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+
+
+|![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg)|![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg)|
+|---|---|
+|<b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|<b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|
