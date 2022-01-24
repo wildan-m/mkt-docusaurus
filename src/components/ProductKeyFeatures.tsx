@@ -10,7 +10,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '1.2	Key Features',
     image: '/img/sensor-node-sn-sf-001.jpg',
     description: (
       <ul>
@@ -32,15 +32,18 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, image, description}: FeatureItem) {
   return (
     <>
-      <div className={clsx('col col--6')}>
-        <div className="text--center">
+      <div className={clsx('col col--5')}>
+        <div className={styles.productKeyFeatureImage}>
           <img className={styles.featureSvg} alt={title} src={image} />
         </div>
-      </div>
-      <div className={clsx('col col--6')}>
         <div className="text--center padding-horiz--md">
-          <h3>{title}</h3>
-          <p>{description}</p>
+          Figure 1: Sensor Node SN-SF-001
+        </div>
+      </div>
+      <div className={clsx('col col--7')}>
+        <div className="text--left padding-horiz--md">
+          <h2>{title}</h2>
+          {description}
         </div>
       </div>
     </>

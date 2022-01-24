@@ -114,7 +114,10 @@ const config = {
       },
     }),
 
-    plugins: [require.resolve('docusaurus-lunr-search')],
+    plugins: [
+      'docusaurus-plugin-sass'
+      ,require.resolve('docusaurus-lunr-search')
+    ],
 };
 
 module.exports = config;
