@@ -6,7 +6,7 @@ import TOCInline from '@theme/TOCInline';
 import DocsCard from '/src/components/global/DocsCard';
 import DocsCards from '/src/components/global/DocsCards';
 import ProductKeyFeatures from '/src/components/ProductKeyFeatures';
-
+import Codepen from '/src/components/global/Codepen';
 
 
 # One Page Component Sample
@@ -95,3 +95,16 @@ Keep out of the reach of small children
     img="/img/recycleable.jpg">
   </DocsCard>
 </DocsCards>
+
+## Sample Include codepen
+
+:::note
+Tip: make sure to view the Codepen below in a [supported browser](https://caniuse.com/#feat=prefers-color-scheme) and then try changing the system preferences on your device between light & dark mode. Here's [how to enable dark mode on Windows 10](https://blogs.windows.com/windowsexperience/2016/08/08/windows-10-tip-personalize-your-pc-by-enabling-the-dark-theme/) and [how to enable it on a Mac](https://support.apple.com/en-us/HT208976).
+:::
+
+<!-- 
+Codepen https://codepen.io/ionic/pen/jONzJpG 
+Changed to https://codepen.io/rcyou/pen/QEObEk/
+-->
+
+<Codepen preview="false" user="rcyou" slug="QEObEk" height="550px" default-tab="js,result" />
