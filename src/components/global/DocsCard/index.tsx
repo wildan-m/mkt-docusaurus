@@ -11,15 +11,15 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   icon?: string;
   hoverIcon?: string;
   iconset?: string;
-  ionicon?: string;
   img?: string;
   size?: 'md' | 'lg';
+  headerAlign: 'center' | 'left' | 'right';
 }
 
 function DocsCard(props: Props): JSX.Element {
   const isStatic = typeof props.href === 'undefined';
   const isOutbound = typeof props.href !== 'undefined' ? /^http/.test(props.href) : false;
-  const header = props.header === 'undefined' ? null : <header className="Card-header">{props.header}</header>;
+  const header = props.header === 'undefined' ? null : <header className={clsx("Card-header", "text--" + props.headerAlign)}>{props.header}</header>;
   const hoverIcon = props.hoverIcon || props.icon;
 
   const content = (
@@ -32,7 +32,6 @@ function DocsCard(props: Props): JSX.Element {
             {hoverIcon && <img src={useBaseUrl(hoverIcon)} className="Card-icon Card-icon-hover" />}
           </div>
         )}
-        {props.ionicon && <ion-icon name={props.ionicon} className="Card-ionicon"></ion-icon>}
         {props.iconset && (
           <div className="Card-iconset__container">
             {props.iconset.split(',').map((icon, index) => (

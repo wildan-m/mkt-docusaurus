@@ -31,24 +31,67 @@ Only heading 2 or above will be in the inline TOC
 ## Sample Side By Side Image without border
 
 <DocsCards>
-  <DocsCard header="Getting Started" href="react/your-first-app" icon="/icons/feature-component-actionsheet-icon.png">
-    <p>Learn the fundamentals you need to know to start building amazing apps with Ionic Framework.</p>
+  <DocsCard 
+    header="Register" 
+    headerAlign="left"
+    img="/img/register.png">
   </DocsCard>
+  <DocsCard
+    header="Login"
+    headerAlign="center"
+    img="/img/login.jpg">
+  </DocsCard>
+  <DocsCard 
+    header="Lost Password" 
+    headerAlign="right"
+    img="/img/lost-password.jpg">
+  </DocsCard>
+</DocsCards>
 
-<DocsCard
-  header="Add Ionic to Existing React App"
-  href="https://dev.to/ionic/adding-ionic-react-to-an-existing-react-project-4kib"
-  icon="/icons/logo-react-icon.png"
->
-  <p>Use individual components or the complete app experience.</p>
-</DocsCard>
+## Use Tip, Warning, Danger
 
-<DocsCard header="Navigation" href="react/navigation" icon="/icons/feature-component-navigation-icon.png">
-  <p>Learn the basics of navigation inside your app with Ionic and React Router</p>
-</DocsCard>
+:::tip Pro Tip
+When you have selected a customized time period of a week or more, play the Bubble visualization to see how the performance changes over time. As well as being a useful way to visualize the data, it also looks really cool. 
+:::
 
-<DocsCard header="Lifecycle" href="react/lifecycle" icon="/icons/feature-guide-components-icon.png">
-  <p>Learn about using Ionic lifecycle events in class components and with hooks</p>
-</DocsCard>
+:::info Info
+When you have selected a customized time period of a week or more, play the Bubble visualization to see how the performance changes over time. As well as being a useful way to visualize the data, it also looks really cool. 
+:::
 
+
+:::caution WARNING
+Keep out of the reach of small children
+:::
+
+:::danger WARNING
+Keep out of the reach of small children
+:::
+
+## Certifications
+
+<DocsCards>
+  <DocsCard 
+    headerAlign="left"
+    img="/img/ce.png">
+  </DocsCard>
+  <DocsCard
+    headerAlign="center"
+    img="/img/sigfox.png">
+  </DocsCard>
+  <DocsCard 
+    headerAlign="right"
+    img="/img/r-nz.png">
+  </DocsCard>
+  <DocsCard 
+    headerAlign="left"
+    img="/img/low-power.jpg">
+  </DocsCard>
+  <DocsCard
+    headerAlign="center"
+    img="/img/rohs.png">
+  </DocsCard>
+  <DocsCard 
+    headerAlign="right"
+    img="/img/recycleable.jpg">
+  </DocsCard>
 </DocsCards>
